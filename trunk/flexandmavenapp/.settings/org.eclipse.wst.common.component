@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+<wb-module deploy-name="flexandmavenapp">
+<wb-resource deploy-path="/" source-path="/flexandmavenapp-web/src/main/webapp"/>
+<wb-resource deploy-path="/" source-path="/bin-debug"/>
+<wb-resource deploy-path="/" source-path="/flex"/>
+<wb-resource deploy-path="/WEB-INF/classes" source-path="/flexandmavenapp-web/src/main/java"/>
+<property name="java-output-path" value="flexandmavenapp-web/WEB-INF/classes"/>
+<property name="context-root" value="flexandmavenapp-web"/>
+</wb-module>
+</project-modules>
