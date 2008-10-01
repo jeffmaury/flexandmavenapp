@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jeffmaury</groupId>
+  <artifactId>flexandmavenapp</artifactId>
+  <packaging>pom</packaging>
+  <name>Flex Builder and Maven integration tutorial</name>
+  <version>1.0.0</version>
+  <repositories>
+    <repository>
+      <id>flex-mojos-repository</id>
+      <url>http://svn.sonatype.org/flexmojos/repository/</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>false</enabled></snapshots>
+    </repository>
+  	<repository>
+  		<id>restforflex</id>
+  		<url>http://restforflex.googlecode.com/svn/repo</url>
+  	</repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>flex-mojos-repository</id>
+      <url>http://svn.sonatype.org/flexmojos/repository/</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>false</enabled></snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>info.rvin.mojo</groupId>
+				<artifactId>flex-compiler-mojo</artifactId>
+				<version>1.0</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+    <modules>
+      <module>html-template</module>
+      <module>flexandmavenapp-config</module>
+      <module>flexandmavenapp-flex</module>
+      <module>flexandmavenapp-web</module>
+    </modules>
+</project>
