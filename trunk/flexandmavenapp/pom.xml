@@ -4,7 +4,7 @@
   <artifactId>flexandmavenapp</artifactId>
   <packaging>pom</packaging>
   <name>Flex Builder and Maven integration tutorial</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <repositories>
     <repository>
       <id>flex-mojos-repository</id>

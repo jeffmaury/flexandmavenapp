@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.jeffmaury</groupId>
     <artifactId>flexandmavenapp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>flexandmavenapp-web</artifactId>
   <packaging>war</packaging>
@@ -14,19 +14,19 @@
     <dependency>
       <groupId>com.jeffmaury</groupId>
       <artifactId>flexandmavenapp-flex</artifactId>
-      <version>1.0.0</version>
+      <version>${project.version}</version>
       <type>swf</type>
     </dependency>
     <dependency>
       <groupId>com.jeffmaury</groupId>
       <artifactId>flexandmavenapp-config</artifactId>
-      <version>1.0.0</version>
+      <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.jeffmaury</groupId>
       <artifactId>flexandmavenapp-html-template</artifactId>
-      <version>1.0.0</version>
+      <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -91,6 +91,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
+        <version>2.1-alpha-2</version>
         <configuration>
           <warSourceExcludes>
             WEB-INF/lib/*,WEB-INF/flex/*
