@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.jeffmaury</groupId>
     <artifactId>flexandmavenapp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>flexandmavenapp-flex</artifactId>
   <packaging>swf</packaging>
@@ -47,7 +47,7 @@
     <dependency>
       <groupId>com.jeffmaury</groupId>
       <artifactId>flexandmavenapp-config</artifactId>
-      <version>1.0.0</version>
+      <version>${project.version}</version>
     </dependency>
   </dependencies>
   <build>
@@ -74,19 +74,20 @@
       <plugin>
         <groupId>info.rvin.mojo</groupId>
         <artifactId>flex-compiler-mojo</artifactId>
+        <configuration>
+          <services>
+            ${project.build.directory}/dependency/services-config.xml
+          </services>
+          <contextRoot>
+            ${project.parent.artifactId}-web-${project.version}
+          </contextRoot>
+          <sourceFile>flexandmavenapp.mxml</sourceFile>
+        </configuration>
         <executions>
           <execution>
             <goals>
               <goal>compile-swf</goal>
             </goals>
-            <configuration>
-              <services>
-                ${project.build.directory}/dependency/services-config.xml
-              </services>
-              <contextRoot>
-                ${project.parent.artifactId}-web-${project.version}
-              </contextRoot>
-            </configuration>
           </execution>
         </executions>
       </plugin>

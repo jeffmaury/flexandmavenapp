@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.jeffmaury</groupId>
     <artifactId>flexandmavenapp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>flexandmavenapp-html-template</artifactId>
   <name>Flex Builder and Maven integration tutorial (HTML files)</name>
