@@ -1,0 +1,1 @@
+A sample tutorial about the Flex and Maven integration
